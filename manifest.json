@@ -1,0 +1,17 @@
+{
+    "name": "Search Autofocus",
+    "description": "A simple autofocus made for little ux improvement sake",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "main.js"
+    },
+    "permissions": ["storage","activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts" :[{
+        "matches": ["https://*/*"],
+        "js": ["jquery.min.js", "content.js"]
+    }]
+}
