@@ -12,6 +12,6 @@
     },
     "content_scripts" :[{
         "matches": ["https://*/*"],
-        "js": ["jquery.min.js", "content.js"]
+        "js": ["jquery.min.js","modules/KeyBindEvents/keyBindingsEventsModule.js", "modules/ClickEvents/clickEventsModule.js", "content.js"]
     }]
 }
